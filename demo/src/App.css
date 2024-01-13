@@ -1,0 +1,70 @@
+#container{
+
+  border: 2px;
+  
+  background-image: url(C:\Users\chaud\flight1\demo\OIP.jpg);
+  background-size: cover;
+      background-position: center; 
+      ;
+      
+      align-items: center;
+      justify-content: center;
+
+}
+#headline{
+  text-align: center;
+  border: 2px solid black;
+  
+}
+
+
+
+#flightshowdiv{
+  
+  border: 2px solid black;
+  text-decoration: solid black;
+  
+}
+
+#radiobuttons{
+  display: flex;
+
+  border: 2px solid black;
+  border-radius: 40px  ;
+}
+
+#one-way{
+
+  margin: 4px;
+
+}
+
+#return{
+
+  margin: 4px;
+
+}
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+}
+#flight-card{
+  display: flex;
+  
+}
+#flight-image{
+  border: 2px solid black;
+  margin-left: auto;
+}
