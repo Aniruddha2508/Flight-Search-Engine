@@ -8,10 +8,6 @@ function Handlesearchoneway(){
     var pass_count=document.getElementById('pass_count').value
     const flightShowDiv = document.getElementById('flightshowdiv');
     
-    const [originCity, setOriginCity] = useState("");
-    const [destinationCity, setDestinationCity] = useState("");
-    const [depDate, setDepDate] = useState("");
-    const [flightDetails, setFlightDetails] = useState(null);
 
     flights.forEach(flight => {
     if (
