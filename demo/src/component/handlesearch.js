@@ -1,6 +1,8 @@
 import React from "react" 
 import { ToastContainer, toast } from 'react-toastify';
 import flights from "./flight"
+
+
 function Handlesearch(){
 
     var origin_city=document.getElementById('origin_city').value
@@ -29,7 +31,9 @@ function Handlesearch(){
         Destination: ${flight.departureCity}<br>
         Date: ${flight.date}<br>
         Return Date: ${flight.returnDate}<br>
-        Departure Time: ${flight.arriveTime}
+        Departure Time: ${flight.arriveTime}<br>
+        Price : ${flight.Returnprice}<br>
+
         <div class="flight-image" id='flight-image'>
             <img src="./OIPP.jpg" alt="Flight Image">
             <button>Book Ticket</button>
@@ -38,8 +42,10 @@ function Handlesearch(){
         
 
         flightShowDiv.innerHTML = flightDetails;
+        
        
     }
+    
     });
 
 
