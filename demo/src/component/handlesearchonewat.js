@@ -7,6 +7,11 @@ function Handlesearchoneway(){
     var Dep_date=document.getElementById('Dep_date').value
     var pass_count=document.getElementById('pass_count').value
     const flightShowDiv = document.getElementById('flightshowdiv');
+    
+    const [originCity, setOriginCity] = useState("");
+    const [destinationCity, setDestinationCity] = useState("");
+    const [depDate, setDepDate] = useState("");
+    const [flightDetails, setFlightDetails] = useState(null);
 
     flights.forEach(flight => {
     if (
@@ -19,12 +24,14 @@ function Handlesearchoneway(){
         <div>
             <h1> ${flight.originCity}>${flight.departureCity}</h1>
         </div>
-        <span class="flight-number">Flight ${flight.id}</span><br>
-        Origin: ${flight.originCity}<br>
-        Destination: ${flight.departureCity}<br>
-        Date: ${flight.date}<br>
-        Return Date: ${flight.returnDate}<br>
-        Departure Time: ${flight.arriveTime}
+        <div id='flight-details'>
+            <span class="flight-number">Flight ${flight.id}</span><br>
+            Origin: ${flight.originCity}<br>
+            Destination: ${flight.departureCity}<br>
+            Date: ${flight.date}<br>
+            Return Date: ${flight.returnDate}<br>
+            Departure Time: ${flight.arriveTime}
+        </div>
         <div class="flight-image" id='flight-image'>
             <img src="./OIPP.jpg" alt="Flight Image">
             <button>Book Ticket</button>
@@ -35,7 +42,7 @@ function Handlesearchoneway(){
     }
     else{
         const flightDetails = `
-        <div>
+        <div id='flight-details'>
             <h1>Flight not available</h1>
         </div>
         

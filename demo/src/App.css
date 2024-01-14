@@ -68,3 +68,18 @@ p {
   border: 2px solid black;
   margin-left: auto;
 }
+#slider{
+  background-color: rgb(179, 111, 15);
+  margin: 5px;
+  margin-top: 10px;
+  
+}
+#flight-image{
+  background-image: url(C:\Users\chaud\flight1\demo\src\OIPP.jpg);
+}
+#flight-details{
+  background-image: url(C:\Users\chaud\flight1\demo\src\OIPP.jpg);
+  text-decoration: solid white;
+  height: fit-content;
+
+}

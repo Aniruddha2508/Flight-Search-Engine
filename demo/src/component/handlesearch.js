@@ -38,8 +38,7 @@ function Handlesearch(){
         
 
         flightShowDiv.innerHTML = flightDetails;
-        notify();
-        <ToastContainer/>
+       
     }else{
         const flightDetails = `
         <div>

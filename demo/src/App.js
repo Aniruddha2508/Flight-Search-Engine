@@ -12,11 +12,14 @@ function App() {
 
   const handleRadioChange = (event) => {
     setSelectedOption(event.target.value);
-    setSearchCriteria(''); 
+    setSearchCriteria('');
+    
+  
 
     console.log('Change is happening:', event.target.value);
 
   };
+ 
 
   const filteredFlights = flights.filter((flight) =>
     flight.originCity.toLowerCase().includes(searchCriteria.toLowerCase()) ||
