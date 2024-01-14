@@ -39,15 +39,6 @@ function Handlesearch(){
 
         flightShowDiv.innerHTML = flightDetails;
        
-    }else{
-        const flightDetails = `
-        <div>
-            <h1>Flight not available</h1>
-        </div>
-        
-        `;
-        flightShowDiv.innerHTML = flightDetails;
-
     }
     });
 
