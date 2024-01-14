@@ -5,6 +5,7 @@ import ReturnForm from './component/returnform';
 import flights from './component/flight';
 import Handlesearch from './component/handlesearch';
 import './App.css';
+import Allflights from './component/allflights';
 
 function App() {
   const [selectedOption, setSelectedOption] = useState('oneway');
@@ -67,28 +68,7 @@ function App() {
         </div>
         <div className="col-8" id='flightshowdiv' >
        
-          <h2>All Flight Details</h2>
-          <div className="flight-cards-container">
-            {filteredFlights.map((flight) => (
-              <div className="flight-card" id='flight-card' key={flight.id}>
-                <div className="flight-info">
-                  <strong>Flight {flight.id}</strong><br />
-                  Origin: {flight.originCity}<br />
-                  Destination: {flight.departureCity}<br />
-                  Date: {flight.date}<br />
-                  Return Date: {flight.returnDate}<br />
-                  Departure Time: {flight.arriveTime}
-                </div>
-                <div className="flight-image" id='flight-image'>
-                  
-                  <img src= 'OIPP.jpg' /><br></br>
-                  <button >Book Ticket</button>
-                </div>
-                
-              </div>
-  ))}
-</div>
-          
+             <Allflights/>
         </div>
       </div>
     </div>
