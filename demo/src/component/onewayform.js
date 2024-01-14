@@ -8,9 +8,11 @@ function Onewat(){
             <div>
             <input type="text" id="origin_city" placeholder="Enter Origin City" required></input>
             <input type="text" id="destination_city" placeholder="Enter Destination city" required></input>
-            <input type="date" id="Dep_date" required></input>
+            <label for='Date of travel'>Date of travel : </label><br></br>
+            <input type="date" id="Dep_date" required></input><br></br>
+            <label>Number of passengers</label>
+            <input type="number" id="pass_count" required></input><br></br>
             
-            <input type="number" id="pass_count" required></input>
             <Button onClick={Handlesearchoneway}>Search</Button>
             </div>
             <div>
