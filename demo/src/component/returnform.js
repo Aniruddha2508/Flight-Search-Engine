@@ -24,11 +24,7 @@ function Returnform(){
             </div>
 
 
-            <div id="slider">
-
-                <MySliderComponent/>
-
-            </div>
+            
 
 
         </div>

@@ -24,9 +24,7 @@ function Onewat(){
             <Button onClick={Handlesearchoneway} >Search</Button>
             </div>
 
-            <div>
-                <MySliderComponent/>
-            </div>
+            
             
     
 

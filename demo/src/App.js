@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { FormGroup, Input, Label } from 'reactstrap';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import OnewayForm from './component/onewayform';
 import ReturnForm from './component/returnform';
 import flights from './component/flight';
 import Handlesearch from './component/handlesearch';
 import './App.css';
 import Allflights from './component/allflights';
+import MySliderComponent from './component/slider';
 
 function App() {
   const [selectedOption, setSelectedOption] = useState('oneway');
@@ -14,6 +17,8 @@ function App() {
   const handleRadioChange = (event) => {
     setSelectedOption(event.target.value);
     setSearchCriteria('');
+    const allFlightDetails = <Allflights />;
+    ReactDOM.render(allFlightDetails, document.getElementById('flightshowdiv'));
     
   
 
@@ -64,6 +69,9 @@ function App() {
           </div>
           <div className="col-8">
             {selectedOption === 'oneway' ? <OnewayForm /> : <ReturnForm />}
+          </div>
+          <div id='slider'>
+            <MySliderComponent/>
           </div>
         </div>
         <div className="col-8" id='flightshowdiv' >
